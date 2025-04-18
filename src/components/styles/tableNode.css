@@ -1,0 +1,95 @@
+/* 表节点样式 */
+.table-node {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    min-width: 180px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+.table-header {
+    background: #f0f0f0;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+    color: #000;
+}
+
+.table-header-selected {
+    background: #3c60ff;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+    color: #000;
+}
+
+.table-fields {
+    padding: 5px 0;
+}
+
+.table-field {
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+}
+
+.table-field:last-child {
+    border-bottom: none;
+}
+
+.field-indicator {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    width: 16px;
+    justify-content: center;
+}
+
+.key-indicator {
+    font-size: 12px;
+    line-height: 1;
+}
+
+.required-indicator {
+    color: #ff4d4f;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.optional-indicator {
+    color: #000;
+    font-size: 8px;
+    line-height: 1;
+}
+
+.field-name {
+    font-weight: 500;
+    color: #000;
+    flex: 1;
+    margin-right: 8px;
+    text-align: left;
+}
+
+.field-type {
+    color: #666;
+    font-size: 0.9em;
+}
+
+  /* 字段连接点样式 */
+.field-handle {
+    width: 8px;
+    height: 8px;
+    background: #555;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+.table-field:hover .field-handle {
+    opacity: 1;
+}
