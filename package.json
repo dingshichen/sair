@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "main": "electron/main.cjs",
+  "author": "ding.shichen",
+  "description": "Database Design Software",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -13,13 +15,13 @@
     "electron:build": "npm run build && electron-builder"
   },
   "dependencies": {
-    "electron": "^35.1.4",
-    "electron-builder": "^26.0.12",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "reactflow": "^11.11.4"
   },
   "devDependencies": {
+    "electron": "^35.1.4",
+    "electron-builder": "^26.0.12",
     "@eslint/js": "^9.21.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
@@ -36,7 +38,7 @@
   },
   "build": {
     "appId": "com.sair.app",
-    "productName": "Flow Demo",
+    "productName": "Sair",
     "directories": {
       "output": "dist_electron"
     },
